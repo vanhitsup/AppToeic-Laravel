@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background: #ededed;
+            color: #666;
+            font: 90%/180% Arial, Helvetica, sans-serif;
+            max-width: 96%;
+            margin: 0 auto;
+        }
+        a {
+            color: #69C;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #F60;
+        }
+        h1 {
+            font: 1.7em;
+            line-height: 110%;
+            color: #000;
+        }
+        p {
+            margin: 0 0 20px;
+        }
+
+
+        input {
+            outline: none;
+        }
+        input[type=search] {
+            -webkit-appearance: textfield;
+            -webkit-box-sizing: content-box;
+            font-family: inherit;
+            font-size: 100%;
+        }
+        input::-webkit-search-decoration,
+        input::-webkit-search-cancel-button {
+            display: none;
+        }
+
+
+        input[type=search] {
+            border: solid 1px #ccc;
+            padding: 9px 10px 9px 32px;
+            width: 55px;
+
+            -webkit-border-radius: 10em;
+            -moz-border-radius: 10em;
+            border-radius: 10em;
+
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+        }
+        input[type=search]:focus {
+            width: 400px;
+            background-color: #fff;
+            border-color: #66CC75;
+
+            -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+            -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+            box-shadow: 0 0 5px rgba(109,207,246,.5);
+        }
+        input:-moz-placeholder {
+            color: #999;
+        }
+        input::-webkit-input-placeholder {
+            color: #999;
+        }
+        .tutim{
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            border: 1px solid;
+        }
+        .container{
+            margin-top: 50px;
+            padding: 5px;
+            width: 70%;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 20px 20px 20px 20px #636b6f;
+        }
+        .tutim:hover{
+            background: #cccccc;
+        }
+        .btn1{
+            background:#ededed ;
+            color: black;
+        }
+        .tumoi{
+            padding:10px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px ;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row float-left" style="margin-top: 50px;margin-right: 50px;box-shadow: 10px 10px 10px greenyellow; border-radius: 60px">
+        <img src="http://localhost/toeicapp_thu/public/images/toeic.png">
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <h1>Ứng dụng từ điển TOEIC</h1>
+        <p style="margin-left: 30px"><a href="http://localhost/toeicapp_thu/public/toeicapp" class="btn btn-info">Quản lý từ vựng</a></p>
+    </div>
+    <form action="" name="" method="get">
+        <input type="search" name="search" value="" placeholder="Nhập từ muốn tra cứu">
+        <input type="submit" name="translate" class="btn btn-info btn1" value="Tìm kiếm">
+    </form>
+    <div class="row tumoi">
+        <div class="col-md-4" style="border-right: 2px solid gray; box-shadow: 5px 5px 5px 5px">
+            <h3 style="color: black">Các từ tìm được</h3>
+            <div class="col-md-12 tutim" ><a href="#">agreement</a></div>
+            <div class="col-md-12 tutim" ><a href="#">agreement</a></div>
+            <div class="col-md-12 tutim" ><a href="#">agreement</a></div>
+        </div>
+        <div class="col-md-8">
+            <div class="alert alert-info"><h3>Từ mới : abide by </h3></div>
+            <div class="alert alert-info">Nghĩa của từ : tuân thủ</div>
+            <h3>Các ví dụ:</h3>
+            <div class="alert alert-success">The two parties agreed to abide by the judge's decision</div>
+            <div class="alert alert-success">Hai đối tác đồng ý</div>
+            <div class="alert alert-success">Không tìm thấy ví dụ của từ này</div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
